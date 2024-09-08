@@ -1,0 +1,1 @@
+This was a simple password generator, which produces a random password with letters, symbols and numbers in a random order.

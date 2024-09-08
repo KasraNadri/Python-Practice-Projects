@@ -1,0 +1,1 @@
+This project was a console application, a simple modeling of the game "Hangman", a word guessing game.
