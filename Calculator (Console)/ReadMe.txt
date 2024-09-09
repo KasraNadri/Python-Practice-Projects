@@ -1,0 +1,1 @@
+This was a console application calculator with the ability to mathematical operations for ever if the user intended it.
