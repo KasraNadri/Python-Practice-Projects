@@ -8,27 +8,30 @@ def encrypt(original_text, shift):
         for j in range(len(alphabet)):
             if original_text[i] == alphabet[j]:
                 if (j + shift + 1) > len(alphabet):
-                     new_text += alphabet[(len(alphabet) - (j+1)) - shift]
+                     new_text += alphabet[abs(len(alphabet) - (j + shift))]
                 else:
                     new_text += alphabet[j + shift]
             if original_text[i] == " ":
                 new_text += original_text[i]
     return new_text
 
-print("Type 'encode' to encrypt, type 'decode' to decrypt: \n")
-type = input().strip().lower()
 repetition = 1
-if type == "encode" or type == "decode":
-    while repetition == 1:
-        print("Type your message: \n")
+while repetition == 1:
+    print("Type 'encode' to encrypt: ")
+    type = input().strip().lower()
+    if type == "encode":
+        print("Type your message: ")
         message = input().lower()
-        print("Type the shift number: \n")
+        print("Type the shift number: ")
         shift = int(input())
         
-        
-        result = encrypt(message)
+        result = encrypt(message, shift)
         print(f"Here's the encoded result: {result}")
         print ("Type 'yes' if you want to go again. Otherwise type 'no'.")
-else:
-    print("Your input was unacceptable!")
+        yesorno = input().strip().lower()
+        if (yesorno  == "no"):
+            repetition = 0
+            print("Goodbye!")
+    else:
+        print("Your input was unacceptable!")
  
