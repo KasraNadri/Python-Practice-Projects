@@ -1,0 +1,1 @@
+This console application models the game of blackjack in which the user plays with the computer.
