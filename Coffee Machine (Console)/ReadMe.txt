@@ -1,0 +1,1 @@
+This is relatively simple console application modeling a coffee machine.
