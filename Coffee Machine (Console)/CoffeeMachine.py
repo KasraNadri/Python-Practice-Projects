@@ -76,7 +76,7 @@ def handle_coins(order):
         return price
     else:
         change = coin_sum - price
-        print(f"Here is ${change} in change.")
+        print(f"Here is ${round(change, 3)} in change.")
         return price
 
 return_action = True

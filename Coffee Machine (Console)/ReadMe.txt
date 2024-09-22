@@ -1,1 +1,1 @@
-This is relatively simple console application modeling a coffee machine.
+This is a relatively simple console application modeling a coffee machine.
